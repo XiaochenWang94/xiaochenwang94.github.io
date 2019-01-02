@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[XGBoost原理]]></title>
+    <url>%2F2019%2F01%2F01%2FXGBoost%E5%8E%9F%E7%90%86%2F</url>
+    <content type="text"><![CDATA[决策树决策树可以分为3类，采用不同的分裂标准，(1)采用信息增益，ID3算法。(2)采用信息增益率，c4.5算法。(3)采用基尼指数CART树。 CART树 XGBoost使用CART(Classification And Regression Tree, 分类回归树)作为基分类器。 基尼指数公式： \operatorname { Gini } ( D ) = \sum _ { k = 1 } ^ { K } p _ { k } \left( 1 - p _ { k } \right)基尼指数增益公式： \operatorname { Gini } ( D , A ) = \frac { \left| D _ { 1 } \right| } { | D | } \operatorname { Gini } \left( D _ { 1 } \right) + \frac { \left| D _ { 2 } \right| } { | D | } \operatorname { Gini } \left( D _ { 2 } \right)GBDTXGBoost目标函数，计算每个叶子节点的权重。 附录 XGBoost比GradientBoost好的原因： 增加正则项，树越复杂，惩罚越大，防止over-fitting, 而GB没有惩罚项。 在迭代更新的时候，XGBoost采用了二阶导数(海瑟矩阵)，而GB只用了一阶导数(梯度)。 XGBoost采用了并行计算，块处理，稀疏矩阵等技术。 节点分裂方式不同，gbdt使用gini指数，XGBoost是经过优化推导后的。 XGBoost进化历程： 决策树 -&gt; 对样本重抽样，多棵树平均-&gt; Tree Bagging -&gt; 对特征进行随机挑选 -&gt; 随机森林 -&gt; 对随机森林中的树进行加权平均，而非简单平均 -&gt; Boosting -&gt; 对Boosting中的树进行正则化 -&gt; XGBoost 对比模型：MART, DART(DART:Dropouts meet Multiple Additive Regression Trees), LightGBM, CatBoost]]></content>
+      <categories>
+        <category>ML</category>
+      </categories>
+      <tags>
+        <tag>xgboost</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2019%2F01%2F01%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
+</search>
