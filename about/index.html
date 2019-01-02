@@ -81,17 +81,17 @@
 
 
 
-<meta name="description" content="决策树决策树可以分为3类，采用不同的分裂标准，(1)采用信息增益，ID3算法。(2)采用信息增益率，c4.5算法。(3)采用基尼指数CART树。 CART树 XGBoost使用CART(Classification And Regression Tree, 分类回归树)作为基分类器。 基尼指数公式： \operatorname { Gini } ( D ) = \sum _ { k = 1 } ^">
-<meta property="og:type" content="article">
-<meta property="og:title" content="XGBoost原理">
-<meta property="og:url" content="http://yoursite.com/2019/01/01/XGBoost原理/index.html">
+<meta name="description" content="Something about me.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="自我介绍">
+<meta property="og:url" content="http://yoursite.com/about/index.html">
 <meta property="og:site_name" content="Recursion">
-<meta property="og:description" content="决策树决策树可以分为3类，采用不同的分裂标准，(1)采用信息增益，ID3算法。(2)采用信息增益率，c4.5算法。(3)采用基尼指数CART树。 CART树 XGBoost使用CART(Classification And Regression Tree, 分类回归树)作为基分类器。 基尼指数公式： \operatorname { Gini } ( D ) = \sum _ { k = 1 } ^">
+<meta property="og:description" content="Something about me.">
 <meta property="og:locale" content="CN">
-<meta property="og:updated_time" content="2019-01-02T08:34:33.166Z">
+<meta property="og:updated_time" content="2019-01-02T08:35:52.555Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="XGBoost原理">
-<meta name="twitter:description" content="决策树决策树可以分为3类，采用不同的分裂标准，(1)采用信息增益，ID3算法。(2)采用信息增益率，c4.5算法。(3)采用基尼指数CART树。 CART树 XGBoost使用CART(Classification And Regression Tree, 分类回归树)作为基分类器。 基尼指数公式： \operatorname { Gini } ( D ) = \sum _ { k = 1 } ^">
+<meta name="twitter:title" content="自我介绍">
+<meta name="twitter:description" content="Something about me.">
 
 
 
@@ -121,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/01/01/XGBoost原理/">
+  <link rel="canonical" href="http://yoursite.com/about/">
 
 
 
 
 
-  <title>XGBoost原理 | Recursion</title>
+  <title>自我介绍 | Recursion</title>
   
 
 
@@ -254,185 +254,34 @@
 
   <div id="posts" class="posts-expand">
     
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/01/XGBoost原理/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Xiaochen Wang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/header.jpeg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Recursion">
-    </span>
-
     
+    
+    <div class="post-block page">
       <header class="post-header">
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">XGBoost原理</h1>
-        
+	<h1 class="post-title" itemprop="name headline">自我介绍</h1>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-01T15:21:38+08:00">
-                2019-01-01
-              </time>
-            
 
-            
 
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/ML/" itemprop="url" rel="index">
-                    <span itemprop="name">ML</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-            <span class="post-meta-divider">|</span>
-            <span class="page-pv"><i class="fa fa-file-o"></i> 浏览
-            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>次
-            </span>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+</header>
 
       
       
-
       
-        <h2 id="决策树"><a href="#决策树" class="headerlink" title="决策树"></a>决策树</h2><p>决策树可以分为3类，采用不同的分裂标准，(1)采用<strong>信息增益</strong>，ID3算法。(2)采用<strong>信息增益率</strong>，c4.5算法。(3)采用<strong>基尼指数</strong>CART树。</p>
-<p><strong>CART树</strong></p>
-<p>XGBoost使用CART(Classification And Regression Tree, 分类回归树)作为基分类器。</p>
-<p>基尼指数公式：</p>
-<script type="math/tex; mode=display">\operatorname { Gini } ( D ) = \sum _ { k = 1 } ^ { K } p _ { k } \left( 1 - p _ { k } \right)</script><p>基尼指数增益公式：</p>
-<script type="math/tex; mode=display">\operatorname { Gini } ( D , A ) = \frac { \left| D _ { 1 } \right| } { | D | } \operatorname { Gini } \left( D _ { 1 } \right) + \frac { \left| D _ { 2 } \right| } { | D | } \operatorname { Gini } \left( D _ { 2 } \right)</script><h2 id="GBDT"><a href="#GBDT" class="headerlink" title="GBDT"></a>GBDT</h2><h2 id="XGBoost"><a href="#XGBoost" class="headerlink" title="XGBoost"></a>XGBoost</h2><p>目标函数，计算每个叶子节点的权重。</p>
-<h2 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h2><ul>
-<li>XGBoost比GradientBoost好的原因：<ol>
-<li>增加正则项，树越复杂，惩罚越大，防止over-fitting, 而GB没有惩罚项。</li>
-<li>在迭代更新的时候，XGBoost采用了二阶导数(海瑟矩阵)，而GB只用了一阶导数(梯度)。</li>
-<li>XGBoost采用了并行计算，块处理，稀疏矩阵等技术。</li>
-<li>节点分裂方式不同，gbdt使用gini指数，XGBoost是经过优化推导后的。</li>
-</ol>
-</li>
-</ul>
-<ul>
-<li><p>XGBoost进化历程：</p>
-<p>  <strong>决策树</strong> -&gt; 对样本重抽样，多棵树平均-&gt; <strong>Tree Bagging</strong> -&gt; 对特征进行随机挑选 -&gt; <strong>随机森林</strong> -&gt; 对随机森林中的树进行加权平均，而非简单平均 -&gt; <strong>Boosting</strong> -&gt; 对Boosting中的树进行正则化 -&gt; XGBoost</p>
-</li>
-</ul>
-<p>对比模型：MART, DART(DART:Dropouts meet Multiple Additive Regression Trees), LightGBM, CatBoost</p>
+      <div class="post-body">
+        
+        
+          <p>Something about me.</p>
 
+        
+      </div>
+      
+      
       
     </div>
     
     
     
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2019/01/01/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-
-    <div class="post-spread">
-      
-    </div>
   </div>
 
 
@@ -465,17 +314,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -535,22 +375,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#决策树"><span class="nav-number">1.</span> <span class="nav-text">决策树</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GBDT"><span class="nav-number">2.</span> <span class="nav-text">GBDT</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#XGBoost"><span class="nav-number">3.</span> <span class="nav-text">XGBoost</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#附录"><span class="nav-number">4.</span> <span class="nav-text">附录</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
