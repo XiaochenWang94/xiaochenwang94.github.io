@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="XGBoost原理附录 XGBoost比GradientBoost好的原因： 增加正则项，树越复杂，惩罚越大，防止over-fitting, 而GB没有惩罚项。 在迭代更新的时候，XGBoost采用了二阶导数(海瑟矩阵)，而GB只用了一阶导数(梯度)。 XGBoost采用了并行计算，块处理，稀疏矩阵等技术。 节点分裂方式不同，gbdt使用gini指数，XGBoost是经过优化推导后的。">
+<meta name="description" content="XGBoost原理决策树CART树 附录 XGBoost比GradientBoost好的原因： 增加正则项，树越复杂，惩罚越大，防止over-fitting, 而GB没有惩罚项。 在迭代更新的时候，XGBoost采用了二阶导数(海瑟矩阵)，而GB只用了一阶导数(梯度)。 XGBoost采用了并行计算，块处理，稀疏矩阵等技术。 节点分裂方式不同，gbdt使用gini指数，XGBoost是经过优化">
 <meta property="og:type" content="article">
 <meta property="og:title" content="XGBoost原理">
 <meta property="og:url" content="http://yoursite.com/2019/01/01/XGBoost原理/index.html">
 <meta property="og:site_name" content="Recursion">
-<meta property="og:description" content="XGBoost原理附录 XGBoost比GradientBoost好的原因： 增加正则项，树越复杂，惩罚越大，防止over-fitting, 而GB没有惩罚项。 在迭代更新的时候，XGBoost采用了二阶导数(海瑟矩阵)，而GB只用了一阶导数(梯度)。 XGBoost采用了并行计算，块处理，稀疏矩阵等技术。 节点分裂方式不同，gbdt使用gini指数，XGBoost是经过优化推导后的。">
+<meta property="og:description" content="XGBoost原理决策树CART树 附录 XGBoost比GradientBoost好的原因： 增加正则项，树越复杂，惩罚越大，防止over-fitting, 而GB没有惩罚项。 在迭代更新的时候，XGBoost采用了二阶导数(海瑟矩阵)，而GB只用了一阶导数(梯度)。 XGBoost采用了并行计算，块处理，稀疏矩阵等技术。 节点分裂方式不同，gbdt使用gini指数，XGBoost是经过优化">
 <meta property="og:locale" content="CN">
-<meta property="og:updated_time" content="2019-01-02T00:52:25.434Z">
+<meta property="og:updated_time" content="2019-01-02T01:00:03.555Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="XGBoost原理">
-<meta name="twitter:description" content="XGBoost原理附录 XGBoost比GradientBoost好的原因： 增加正则项，树越复杂，惩罚越大，防止over-fitting, 而GB没有惩罚项。 在迭代更新的时候，XGBoost采用了二阶导数(海瑟矩阵)，而GB只用了一阶导数(梯度)。 XGBoost采用了并行计算，块处理，稀疏矩阵等技术。 节点分裂方式不同，gbdt使用gini指数，XGBoost是经过优化推导后的。">
+<meta name="twitter:description" content="XGBoost原理决策树CART树 附录 XGBoost比GradientBoost好的原因： 增加正则项，树越复杂，惩罚越大，防止over-fitting, 而GB没有惩罚项。 在迭代更新的时候，XGBoost采用了二阶导数(海瑟矩阵)，而GB只用了一阶导数(梯度)。 XGBoost采用了并行计算，块处理，稀疏矩阵等技术。 节点分裂方式不同，gbdt使用gini指数，XGBoost是经过优化">
 
 
 
@@ -299,7 +299,8 @@
       
 
       
-        <h2 id="XGBoost原理"><a href="#XGBoost原理" class="headerlink" title="XGBoost原理"></a>XGBoost原理</h2><h2 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h2><ul>
+        <h2 id="XGBoost原理"><a href="#XGBoost原理" class="headerlink" title="XGBoost原理"></a>XGBoost原理</h2><h3 id="决策树"><a href="#决策树" class="headerlink" title="决策树"></a>决策树</h3><p><strong>CART树</strong></p>
+<h2 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h2><ul>
 <li>XGBoost比GradientBoost好的原因：<ol>
 <li>增加正则项，树越复杂，惩罚越大，防止over-fitting, 而GB没有惩罚项。</li>
 <li>在迭代更新的时候，XGBoost采用了二阶导数(海瑟矩阵)，而GB只用了一阶导数(梯度)。</li>
@@ -313,7 +314,7 @@
 <p>  <strong>决策树</strong> -&gt; 对样本重抽样，多棵树平均-&gt; <strong>Tree Bagging</strong> -&gt; 对特征进行随机挑选 -&gt; <strong>随机森林</strong> -&gt; 对随机森林中的树进行加权平均，而非简单平均 -&gt; <strong>Boosting</strong> -&gt; 对Boosting中的树进行正则化 -&gt; XGBoost</p>
 </li>
 </ul>
-<p>对比模型：MART, DART(DART:Dropouts meet Multiple Additive Regression Trees)</p>
+<p>对比模型：MART, DART(DART:Dropouts meet Multiple Additive Regression Trees), LightGBM, CatBoost</p>
 
       
     </div>
@@ -460,7 +461,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#XGBoost原理"><span class="nav-number">1.</span> <span class="nav-text">XGBoost原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#附录"><span class="nav-number">2.</span> <span class="nav-text">附录</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#XGBoost原理"><span class="nav-number">1.</span> <span class="nav-text">XGBoost原理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#决策树"><span class="nav-number">1.1.</span> <span class="nav-text">决策树</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#附录"><span class="nav-number">2.</span> <span class="nav-text">附录</span></a></li></ol></div>
             
 
           </div>
