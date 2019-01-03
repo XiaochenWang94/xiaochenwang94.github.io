@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="Recursion">
 <meta property="og:description" content="决策树决策树可以分为3类，采用不同的分裂标准，(1)采用信息增益，ID3算法。(2)采用信息增益率，c4.5算法。(3)采用基尼指数CART树。 CART树 XGBoost使用CART(Classification And Regression Tree, 分类回归树)作为基分类器。 基尼指数公式： \operatorname { Gini } ( D ) = \sum _ { k = 1 } ^">
 <meta property="og:locale" content="CN">
-<meta property="og:updated_time" content="2019-01-02T09:07:34.764Z">
+<meta property="og:updated_time" content="2019-01-03T01:42:21.047Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="XGBoost原理">
 <meta name="twitter:description" content="决策树决策树可以分为3类，采用不同的分裂标准，(1)采用信息增益，ID3算法。(2)采用信息增益率，c4.5算法。(3)采用基尼指数CART树。 CART树 XGBoost使用CART(Classification And Regression Tree, 分类回归树)作为基分类器。 基尼指数公式： \operatorname { Gini } ( D ) = \sum _ { k = 1 } ^">
@@ -377,6 +377,37 @@
           
 
           
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  437
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">
+                  1
+                </span>
+              
+            </div>
+          
 
           
 
@@ -398,7 +429,10 @@
 <p>XGBoost使用CART(Classification And Regression Tree, 分类回归树)作为基分类器。</p>
 <p>基尼指数公式：</p>
 <script type="math/tex; mode=display">\operatorname { Gini } ( D ) = \sum _ { k = 1 } ^ { K } p _ { k } \left( 1 - p _ { k } \right)</script><p>基尼指数增益公式：</p>
-<script type="math/tex; mode=display">\operatorname { Gini } ( D , A ) = \frac { \left| D _ { 1 } \right| } { | D | } \operatorname { Gini } \left( D _ { 1 } \right) + \frac { \left| D _ { 2 } \right| } { | D | } \operatorname { Gini } \left( D _ { 2 } \right)</script><h2 id="GBDT"><a href="#GBDT" class="headerlink" title="GBDT"></a>GBDT</h2><h2 id="XGBoost"><a href="#XGBoost" class="headerlink" title="XGBoost"></a>XGBoost</h2><p>目标函数，计算每个叶子节点的权重。</p>
+<script type="math/tex; mode=display">\operatorname { Gini } ( D , A ) = \frac { \left| D _ { 1 } \right| } { | D | } \operatorname { Gini } \left( D _ { 1 } \right) + \frac { \left| D _ { 2 } \right| } { | D | } \operatorname { Gini } \left( D _ { 2 } \right)</script><h2 id="GBDT"><a href="#GBDT" class="headerlink" title="GBDT"></a>GBDT</h2><h2 id="XGBoost"><a href="#XGBoost" class="headerlink" title="XGBoost"></a>XGBoost</h2><p>目标函数，目标函数如下</p>
+<script type="math/tex; mode=display">\operatorname { Obj } ( t ) = \sum _ { i = 1 } ^ { n } L \left( y _ { i } , \hat { y } ^ { t - 1 } + f _ { t } \left( x _ { i } \right) \right) + \Omega \left( f _ { t } \right) + \text { constant }</script><p>其中constant是一个常数，$\Omega \left( f _ { t } \right)$为正则项。</p>
+<p>正则项如下：</p>
+<script type="math/tex; mode=display">\Omega \left( f _ { t } \right) = \gamma T + \frac { 1 } { 2 } \lambda \sum _ { i = 1 } ^ { T } w _ { j } ^ { 2 }</script><p>优化目标函数是为了计算每个叶子节点的权重。</p>
 <h2 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h2><ul>
 <li>XGBoost比GradientBoost好的原因：<ol>
 <li>增加正则项，树越复杂，惩罚越大，防止over-fitting, 而GB没有惩罚项。</li>
@@ -648,7 +682,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共417字</span>
+  <span class="post-count">博客全站共510字</span>
 </div>
 
         
