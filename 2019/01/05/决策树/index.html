@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="tree,">
 
 
 
@@ -81,16 +81,18 @@
 
 
 
-<meta name="description" content="ML, Life">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Recursion">
-<meta property="og:url" content="http://yoursite.com/categories/ML/index.html">
+<meta name="description" content="决策树优点 容易解释，可以可视化。 对数据预处理的要求低，不需要做数据归一化，允许数据有缺失。 可以处理连续型变量和离散型变量。  决策树的缺点 容易过拟合，可以通过剪枝，设置每个节点最小样本数量，树的最大深度来避免。 容易收到干扰，某些数据的微小变化可能带来树的巨大变化。其实就是方差的问题，减小方差可以通过ensemble的方式缓解。 无法保证找到最优的树，找到最优的树是一个NPC问题。因此，每">
+<meta name="keywords" content="tree">
+<meta property="og:type" content="article">
+<meta property="og:title" content="决策树">
+<meta property="og:url" content="http://yoursite.com/2019/01/05/决策树/index.html">
 <meta property="og:site_name" content="Recursion">
-<meta property="og:description" content="ML, Life">
+<meta property="og:description" content="决策树优点 容易解释，可以可视化。 对数据预处理的要求低，不需要做数据归一化，允许数据有缺失。 可以处理连续型变量和离散型变量。  决策树的缺点 容易过拟合，可以通过剪枝，设置每个节点最小样本数量，树的最大深度来避免。 容易收到干扰，某些数据的微小变化可能带来树的巨大变化。其实就是方差的问题，减小方差可以通过ensemble的方式缓解。 无法保证找到最优的树，找到最优的树是一个NPC问题。因此，每">
 <meta property="og:locale" content="CN">
+<meta property="og:updated_time" content="2019-01-15T02:28:15.751Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Recursion">
-<meta name="twitter:description" content="ML, Life">
+<meta name="twitter:title" content="决策树">
+<meta name="twitter:description" content="决策树优点 容易解释，可以可视化。 对数据预处理的要求低，不需要做数据归一化，允许数据有缺失。 可以处理连续型变量和离散型变量。  决策树的缺点 容易过拟合，可以通过剪枝，设置每个节点最小样本数量，树的最大深度来避免。 容易收到干扰，某些数据的微小变化可能带来树的巨大变化。其实就是方差的问题，减小方差可以通过ensemble的方式缓解。 无法保证找到最优的树，找到最优的树是一个NPC问题。因此，每">
 
 
 
@@ -120,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/categories/ML/">
+  <link rel="canonical" href="http://yoursite.com/2019/01/05/决策树/">
 
 
 
 
 
-  <title>Category: ML | Recursion</title>
+  <title>决策树 | Recursion</title>
   
 
 
@@ -145,7 +147,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <a href="https://github.com/xiaochenwang94" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#FD6C6C; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
@@ -283,157 +285,238 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block category">
-
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>ML<small>Category</small>
-        </h1>
-      </div>
-
-      
-        
 
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/05/决策树/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Xiaochen Wang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/header.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Recursion">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2019/01/05/集成学习/" itemprop="url">
-              
-                <span itemprop="name">集成学习</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">决策树</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-01-05T13:19:25+08:00" content="2019-01-05">
-          01-05
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-05T12:02:20+08:00">
+                2019-01-05
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/ML/" itemprop="url" rel="index">
+                    <span itemprop="name">ML</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i> 浏览
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>次
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  675
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">
+                  2
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/01/05/决策树/" itemprop="url">
-              
-                <span itemprop="name">决策树</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-01-05T12:02:20+08:00" content="2019-01-05">
-          01-05
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+      
 
       
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/01/03/XGBoost结果分析/" itemprop="url">
-              
-                <span itemprop="name">XGBoost结果分析</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-01-03T17:11:38+08:00" content="2019-01-03">
-          01-03
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/01/03/XGBoost使用/" itemprop="url">
-              
-                <span itemprop="name">XGBoost使用</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-01-03T16:40:30+08:00" content="2019-01-03">
-          01-03
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/01/01/XGBoost原理/" itemprop="url">
-              
-                <span itemprop="name">XGBoost原理</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-01-01T15:21:38+08:00" content="2019-01-01">
-          01-01
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+        <h2 id="决策树优点"><a href="#决策树优点" class="headerlink" title="决策树优点"></a>决策树优点</h2><ol>
+<li>容易解释，可以可视化。</li>
+<li>对数据预处理的要求低，不需要做数据归一化，允许数据有缺失。</li>
+<li>可以处理连续型变量和离散型变量。</li>
+</ol>
+<h2 id="决策树的缺点"><a href="#决策树的缺点" class="headerlink" title="决策树的缺点"></a>决策树的缺点</h2><ol>
+<li>容易过拟合，可以通过剪枝，设置每个节点最小样本数量，树的最大深度来避免。</li>
+<li>容易收到干扰，某些数据的微小变化可能带来树的巨大变化。其实就是方差的问题，减小方差可以通过ensemble的方式缓解。</li>
+<li>无法保证找到最优的树，找到最优的树是一个NPC问题。因此，每个节点分裂时，使用贪心算法。只能得到局部最优解。可以通过ensemble的方式缓解，训练每棵树时对数据和特征做采样。</li>
+<li>There are concepts that are hard to learn because decision trees do not express them easily, such as XOR, parity or multiplexer problems.</li>
+<li>对于数据不平衡问题，树可能有很大的偏差，需要先解决数据不平衡问题。</li>
+</ol>
+<h2 id="时间复杂度分析"><a href="#时间复杂度分析" class="headerlink" title="时间复杂度分析"></a>时间复杂度分析</h2><h2 id="使用技巧"><a href="#使用技巧" class="headerlink" title="使用技巧"></a>使用技巧</h2><ol>
+<li>数据量和特征数量要匹配，数据很少，但是特征很多很容易过拟合。</li>
+<li>提前使用PCA，ICA或者Feature Selection降维可以让树学的更好。</li>
+<li>事先解决数据不平衡问题。例如通过采样方式，或者通过normalizing the sum of the sample weights for each class的方式实现。</li>
+</ol>
+<h2 id="不同类型的树"><a href="#不同类型的树" class="headerlink" title="不同类型的树"></a>不同类型的树</h2><h3 id="ID3"><a href="#ID3" class="headerlink" title="ID3"></a>ID3</h3><p>ID3树每个节点有多个分支，根据信息增益来作为分裂标准。在树生成之后使用剪枝来防止过拟合。</p>
+<p>缺点：只能使用离散特征，只能针对分类问题。</p>
+<p>信息熵，表示数据的不确定程度。公式如下：</p>
+<script type="math/tex; mode=display">entropy=\sum _ { x \in X } - p ( x ) \log _ { 2 } p ( x )</script><p>信息增益，公式如下：</p>
+<script type="math/tex; mode=display">I G ( S , A ) = \mathrm { H } ( S ) - \sum _ { t \in T } p ( t ) \mathrm { H } ( t )</script><p>ID3算法：</p>
+<ol>
+<li>遍历所有特征，找到IG最大的特征。</li>
+<li>使用该特征进行划分。并删除该特征。</li>
+<li>循环1-2，直到所有数据为相同类别，或者达到叶子节点最小数量要求。</li>
+</ol>
+<h3 id="C4-5"><a href="#C4-5" class="headerlink" title="C4.5"></a>C4.5</h3><p>C4.5树是ID3的一个后续，使用信息增益率作为分裂标准，可以使用连续值作为特征(对于一个连续特征，取所有数据中出现的值，排序之后，取相邻的两个值的均值作为划分点)。采用后剪枝防止过拟合。</p>
+<p>缺点：只能针对分类问题。</p>
+<h3 id="CART"><a href="#CART" class="headerlink" title="CART"></a>CART</h3><p>CART树支持回归问题，对于分类问题使用基尼系数的增益作为分裂标准。对于回归问题使用MSE作为分裂标准。</p>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/tree/" rel="tag"># tree</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/01/03/XGBoost结果分析/" rel="next" title="XGBoost结果分析">
+                <i class="fa fa-chevron-left"></i> XGBoost结果分析
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/01/05/集成学习/" rel="prev" title="集成学习">
+                集成学习 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -441,6 +524,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -461,8 +548,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -541,6 +637,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#决策树优点"><span class="nav-number">1.</span> <span class="nav-text">决策树优点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#决策树的缺点"><span class="nav-number">2.</span> <span class="nav-text">决策树的缺点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#时间复杂度分析"><span class="nav-number">3.</span> <span class="nav-text">时间复杂度分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用技巧"><span class="nav-number">4.</span> <span class="nav-text">使用技巧</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#不同类型的树"><span class="nav-number">5.</span> <span class="nav-text">不同类型的树</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#ID3"><span class="nav-number">5.1.</span> <span class="nav-text">ID3</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#C4-5"><span class="nav-number">5.2.</span> <span class="nav-text">C4.5</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CART"><span class="nav-number">5.3.</span> <span class="nav-text">CART</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -706,6 +818,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 

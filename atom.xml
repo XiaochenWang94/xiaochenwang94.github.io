@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-01-03T01:42:21.047Z</updated>
+  <updated>2019-01-16T14:43:38.761Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,153 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>张江895孵化器访问</title>
+    <link href="http://yoursite.com/2019/01/16/%E5%BC%A0%E6%B1%9F895%E5%AD%B5%E5%8C%96%E5%99%A8%E8%AE%BF%E9%97%AE/"/>
+    <id>http://yoursite.com/2019/01/16/张江895孵化器访问/</id>
+    <published>2019-01-16T13:44:19.000Z</published>
+    <updated>2019-01-16T14:43:38.761Z</updated>
+    
+    <content type="html"><![CDATA[<p>由于寒假社会生活实践的原因，今天我拜访了位于张江高科的895医疗健康孵化器。这家公司成立于2013年，于2017年12月正式开始运营孵化器，大部分的公司处在A轮之前，产品处于生产出来之前。目前有8家孵化企业，追求小而精的团队。其中设计AI的有3家，大部分是医疗器械和智慧养老。这家孵化器属于民营公司，主要通过已有的创业经验来帮助创业团队，帮助走过创业的初期。对比学校的孵化器所做的产品更加深入，对比政府的孵化器，能够在应用和技术的细节上为创业团队提供帮助，而不只是政策引导的帮助(政府的孵化器相当于是老教授，民营孵化器相当于是高年级学长)。管理团队来自各个创业团队的主要成员。895医疗健康孵化器对于挑选入住孵化器的团队主要看3个方面，(1)技术创新性，临床需求；(2)公司的成熟度是否和孵化器匹配；(3)和已经入住的团队是否匹配。</p><p>这是我第一次了解什么是孵化器，孵化器有什么作用，以及人工智能在医疗领域的应用现状。</p><p>一般来讲，创业开始都是有了一个不错的idea或者是有了一项创新的技术。但是创立一个公司却不单单是这些。创始人要考虑出了技术之外的很多方面，例如：财务，法务，客户等等问题。一个没有经验的创业者，会被这些问题阻碍。因此针对出了技术之外的繁杂问题，孵化器主要从以下三个方面提供了帮助，(1)软硬件设施；(2)行业资源；(3)生态圈。</p><p><strong>软硬件设施</strong>。首先是孵化器为创业团队提供了办公场所，但这是最不重要的一点。如果只是办公场所，孵化器和二房东就没有区别了。例如：一个团队做出来算法的创新，需要做一款APP来推向市场。传统的方式是自己聘用做APP的人，或者外包出去。前者由于开发不是重点，如果没有足够的资金，那么难以保证质量，而且一时间也难以组建一个合适的开发团队。后者外包的开发的团队一般对于创业的领域了解程度不够，在对接需求上会花费大量的经历，也会影响产品的质量(这一点我深有体会，在2018年11月上线一个产品时，由于开发团队没有金融的基础，每次新来一个业务人员，我需要把整个背景讲一遍，处理问题的细节时也经常出错)。孵化器里面的企业类型相同或者相似，直接配以开发团队，轮流为各个创业团队提供开发服务，既为开发团队解决了不必要的问题，又深入了业务，减少了大量的错误，节省了成本。除此之外，一个产品开发出来，后期的跟踪很重要。但是创业团队不一定有专业的专门的人负责这件事情。例如：监测老人身体状况的手环，孵化器配备的人员会定期回访手环使用情况。检测到老人摔倒，到底是真的摔倒，还是老人在做什么事情。医疗数据有数据量小，但是要求准确性高的特点。通过后期跟踪，能够及时的得到数据反馈，调整模型。第三，平台能够让产品尽快实践，得到实际的反馈，产品操作是否便捷，培训是否简单。这些决定了最终是否有人买账。以上的软硬件设施或者团队，在创业初期很难建设完全。但是这些模块缺一不可，孵化器就成了一个很好的支持。</p><p><strong>行业资源</strong>。医疗器械的成熟慢，一个产品要5-8年的周期，过程中要设计方方面面。因此把一个想法或者一个算法变成产品，行业资源是不可缺少的。在医疗行业，国家有非常严格的监管。对于每一个产品如何验证其安全性，如何设计临床实验，如何保证生产中的质量。这些大坑足以把绝大部分创业者卡死，毕竟医疗行业产品要保证最差的时候也要有很高的准确率。一次错误也不能犯。孵化器在这些方面有丰富的资源，能够及时的为创业团队提供这些服务。</p><p><strong>生态圈</strong>。孵化器中同时存在相同类型的多家公司，是一个很好的生态圈，不同公司之间往往会擦出不可思议的火花。例如：一个做医疗穿戴的团队和智慧社区养老的团队合作，同时解决了两个团队的问题。在一个大的平台上能够拓宽思路和产品的销路。</p><p>总体来说，医疗行业和互联网行业还是有很大的区别。医疗行业的成熟速度慢，很保守，产品要有严格的安全性。尽管目前有很多论文，但是产品的下限还难以保证，因此人工智能在医疗领域的应用还有很大的发展空间。</p><p>待续。。。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;由于寒假社会生活实践的原因，今天我拜访了位于张江高科的895医疗健康孵化器。这家公司成立于2013年，于2017年12月正式开始运营孵化器，大部分的公司处在A轮之前，产品处于生产出来之前。目前有8家孵化企业，追求小而精的团队。其中设计AI的有3家，大部分是医疗器械和智慧养老
+      
+    
+    </summary>
+    
+      <category term="生活游记" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB%E6%B8%B8%E8%AE%B0/"/>
+    
+    
+      <category term="生活游记" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB%E6%B8%B8%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GANs</title>
+    <link href="http://yoursite.com/2019/01/14/GANs/"/>
+    <id>http://yoursite.com/2019/01/14/GANs/</id>
+    <published>2019-01-14T13:41:49.000Z</published>
+    <updated>2019-01-14T13:46:23.315Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="对抗生成网络笔记"><a href="#对抗生成网络笔记" class="headerlink" title="对抗生成网络笔记"></a>对抗生成网络笔记</h1><p>这篇文章用来记录各种GAN的原理和应用。</p><h2 id="EBGAN-ENERGY-BASED-GENERATIVE-ADVERSARIAL-NETWORKS"><a href="#EBGAN-ENERGY-BASED-GENERATIVE-ADVERSARIAL-NETWORKS" class="headerlink" title="EBGAN(ENERGY-BASED GENERATIVE ADVERSARIAL NETWORKS)"></a>EBGAN(ENERGY-BASED GENERATIVE ADVERSARIAL NETWORKS)</h2><p>作者：Junbo Zhao, Michael Mathieu and Yann LeCun<br>发表：ICLR 2017</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;对抗生成网络笔记&quot;&gt;&lt;a href=&quot;#对抗生成网络笔记&quot; class=&quot;headerlink&quot; title=&quot;对抗生成网络笔记&quot;&gt;&lt;/a&gt;对抗生成网络笔记&lt;/h1&gt;&lt;p&gt;这篇文章用来记录各种GAN的原理和应用。&lt;/p&gt;
+&lt;h2 id=&quot;EBGAN-ENERGY-
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>集成学习</title>
+    <link href="http://yoursite.com/2019/01/05/%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0/"/>
+    <id>http://yoursite.com/2019/01/05/集成学习/</id>
+    <published>2019-01-05T05:19:25.000Z</published>
+    <updated>2019-01-05T09:46:53.342Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="随机森林"><a href="#随机森林" class="headerlink" title="随机森林"></a>随机森林</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;随机森林&quot;&gt;&lt;a href=&quot;#随机森林&quot; class=&quot;headerlink&quot; title=&quot;随机森林&quot;&gt;&lt;/a&gt;随机森林&lt;/h2&gt;
+      
+    
+    </summary>
+    
+      <category term="ML" scheme="http://yoursite.com/categories/ML/"/>
+    
+    
+      <category term="Ensemble Learning" scheme="http://yoursite.com/tags/Ensemble-Learning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>决策树</title>
+    <link href="http://yoursite.com/2019/01/05/%E5%86%B3%E7%AD%96%E6%A0%91/"/>
+    <id>http://yoursite.com/2019/01/05/决策树/</id>
+    <published>2019-01-05T04:02:20.000Z</published>
+    <updated>2019-01-15T02:28:15.751Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="决策树优点"><a href="#决策树优点" class="headerlink" title="决策树优点"></a>决策树优点</h2><ol><li>容易解释，可以可视化。</li><li>对数据预处理的要求低，不需要做数据归一化，允许数据有缺失。</li><li>可以处理连续型变量和离散型变量。</li></ol><h2 id="决策树的缺点"><a href="#决策树的缺点" class="headerlink" title="决策树的缺点"></a>决策树的缺点</h2><ol><li>容易过拟合，可以通过剪枝，设置每个节点最小样本数量，树的最大深度来避免。</li><li>容易收到干扰，某些数据的微小变化可能带来树的巨大变化。其实就是方差的问题，减小方差可以通过ensemble的方式缓解。</li><li>无法保证找到最优的树，找到最优的树是一个NPC问题。因此，每个节点分裂时，使用贪心算法。只能得到局部最优解。可以通过ensemble的方式缓解，训练每棵树时对数据和特征做采样。</li><li>There are concepts that are hard to learn because decision trees do not express them easily, such as XOR, parity or multiplexer problems.</li><li>对于数据不平衡问题，树可能有很大的偏差，需要先解决数据不平衡问题。</li></ol><h2 id="时间复杂度分析"><a href="#时间复杂度分析" class="headerlink" title="时间复杂度分析"></a>时间复杂度分析</h2><h2 id="使用技巧"><a href="#使用技巧" class="headerlink" title="使用技巧"></a>使用技巧</h2><ol><li>数据量和特征数量要匹配，数据很少，但是特征很多很容易过拟合。</li><li>提前使用PCA，ICA或者Feature Selection降维可以让树学的更好。</li><li>事先解决数据不平衡问题。例如通过采样方式，或者通过normalizing the sum of the sample weights for each class的方式实现。</li></ol><h2 id="不同类型的树"><a href="#不同类型的树" class="headerlink" title="不同类型的树"></a>不同类型的树</h2><h3 id="ID3"><a href="#ID3" class="headerlink" title="ID3"></a>ID3</h3><p>ID3树每个节点有多个分支，根据信息增益来作为分裂标准。在树生成之后使用剪枝来防止过拟合。</p><p>缺点：只能使用离散特征，只能针对分类问题。</p><p>信息熵，表示数据的不确定程度。公式如下：</p><script type="math/tex; mode=display">entropy=\sum _ { x \in X } - p ( x ) \log _ { 2 } p ( x )</script><p>信息增益，公式如下：</p><script type="math/tex; mode=display">I G ( S , A ) = \mathrm { H } ( S ) - \sum _ { t \in T } p ( t ) \mathrm { H } ( t )</script><p>ID3算法：</p><ol><li>遍历所有特征，找到IG最大的特征。</li><li>使用该特征进行划分。并删除该特征。</li><li>循环1-2，直到所有数据为相同类别，或者达到叶子节点最小数量要求。</li></ol><h3 id="C4-5"><a href="#C4-5" class="headerlink" title="C4.5"></a>C4.5</h3><p>C4.5树是ID3的一个后续，使用信息增益率作为分裂标准，可以使用连续值作为特征(对于一个连续特征，取所有数据中出现的值，排序之后，取相邻的两个值的均值作为划分点)。采用后剪枝防止过拟合。</p><p>缺点：只能针对分类问题。</p><h3 id="CART"><a href="#CART" class="headerlink" title="CART"></a>CART</h3><p>CART树支持回归问题，对于分类问题使用基尼系数的增益作为分裂标准。对于回归问题使用MSE作为分裂标准。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;决策树优点&quot;&gt;&lt;a href=&quot;#决策树优点&quot; class=&quot;headerlink&quot; title=&quot;决策树优点&quot;&gt;&lt;/a&gt;决策树优点&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;容易解释，可以可视化。&lt;/li&gt;
+&lt;li&gt;对数据预处理的要求低，不需要做数据归一化，允许数据有缺失。&lt;/
+      
+    
+    </summary>
+    
+      <category term="ML" scheme="http://yoursite.com/categories/ML/"/>
+    
+    
+      <category term="tree" scheme="http://yoursite.com/tags/tree/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>XGBoost结果分析</title>
+    <link href="http://yoursite.com/2019/01/03/XGBoost%E7%BB%93%E6%9E%9C%E5%88%86%E6%9E%90/"/>
+    <id>http://yoursite.com/2019/01/03/XGBoost结果分析/</id>
+    <published>2019-01-03T09:11:38.000Z</published>
+    <updated>2019-01-05T03:57:21.526Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="使用eli5进行解释"><a href="#使用eli5进行解释" class="headerlink" title="使用eli5进行解释"></a>使用eli5进行解释</h2><p>这里参考eli5的文档，使用kaggle泰坦尼克数据集为例，对XGBoost的结果进行解释。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;使用eli5进行解释&quot;&gt;&lt;a href=&quot;#使用eli5进行解释&quot; class=&quot;headerlink&quot; title=&quot;使用eli5进行解释&quot;&gt;&lt;/a&gt;使用eli5进行解释&lt;/h2&gt;&lt;p&gt;这里参考eli5的文档，使用kaggle泰坦尼克数据集为例，对XGBoo
+      
+    
+    </summary>
+    
+      <category term="ML" scheme="http://yoursite.com/categories/ML/"/>
+    
+    
+      <category term="xgboost" scheme="http://yoursite.com/tags/xgboost/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>XGBoost使用</title>
+    <link href="http://yoursite.com/2019/01/03/XGBoost%E4%BD%BF%E7%94%A8/"/>
+    <id>http://yoursite.com/2019/01/03/XGBoost使用/</id>
+    <published>2019-01-03T08:40:30.000Z</published>
+    <updated>2019-01-03T08:41:00.575Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="ML" scheme="http://yoursite.com/categories/ML/"/>
+    
+    
+      <category term="xgboost" scheme="http://yoursite.com/tags/xgboost/"/>
+    
+  </entry>
+  
+  <entry>
     <title>XGBoost原理</title>
     <link href="http://yoursite.com/2019/01/01/XGBoost%E5%8E%9F%E7%90%86/"/>
     <id>http://yoursite.com/2019/01/01/XGBoost原理/</id>
     <published>2019-01-01T07:21:38.000Z</published>
-    <updated>2019-01-03T01:42:21.047Z</updated>
+    <updated>2019-01-03T08:38:15.433Z</updated>
     
     <content type="html"><![CDATA[<h2 id="决策树"><a href="#决策树" class="headerlink" title="决策树"></a>决策树</h2><p>决策树可以分为3类，采用不同的分裂标准，(1)采用<strong>信息增益</strong>，ID3算法。(2)采用<strong>信息增益率</strong>，c4.5算法。(3)采用<strong>基尼指数</strong>CART树。</p><p><strong>CART树</strong></p><p>XGBoost使用CART(Classification And Regression Tree, 分类回归树)作为基分类器。</p><p>基尼指数公式：</p><script type="math/tex; mode=display">\operatorname { Gini } ( D ) = \sum _ { k = 1 } ^ { K } p _ { k } \left( 1 - p _ { k } \right)</script><p>基尼指数增益公式：</p><script type="math/tex; mode=display">\operatorname { Gini } ( D , A ) = \frac { \left| D _ { 1 } \right| } { | D | } \operatorname { Gini } \left( D _ { 1 } \right) + \frac { \left| D _ { 2 } \right| } { | D | } \operatorname { Gini } \left( D _ { 2 } \right)</script><h2 id="GBDT"><a href="#GBDT" class="headerlink" title="GBDT"></a>GBDT</h2><h2 id="XGBoost"><a href="#XGBoost" class="headerlink" title="XGBoost"></a>XGBoost</h2><p>目标函数，目标函数如下</p><script type="math/tex; mode=display">\operatorname { Obj } ( t ) = \sum _ { i = 1 } ^ { n } L \left( y _ { i } , \hat { y } ^ { t - 1 } + f _ { t } \left( x _ { i } \right) \right) + \Omega \left( f _ { t } \right) + \text { constant }</script><p>其中constant是一个常数，$\Omega \left( f _ { t } \right)$为正则项。</p><p>正则项如下：</p><script type="math/tex; mode=display">\Omega \left( f _ { t } \right) = \gamma T + \frac { 1 } { 2 } \lambda \sum _ { i = 1 } ^ { T } w _ { j } ^ { 2 }</script><p>优化目标函数是为了计算每个叶子节点的权重。</p><h2 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h2><ul><li>XGBoost比GradientBoost好的原因：<ol><li>增加正则项，树越复杂，惩罚越大，防止over-fitting, 而GB没有惩罚项。</li><li>在迭代更新的时候，XGBoost采用了二阶导数(海瑟矩阵)，而GB只用了一阶导数(梯度)。</li><li>XGBoost采用了并行计算，块处理，稀疏矩阵等技术。</li><li>节点分裂方式不同，gbdt使用gini指数，XGBoost是经过优化推导后的。</li></ol></li></ul><ul><li><p>XGBoost进化历程：</p><p>  <strong>决策树</strong> -&gt; 对样本重抽样，多棵树平均-&gt; <strong>Tree Bagging</strong> -&gt; 对特征进行随机挑选 -&gt; <strong>随机森林</strong> -&gt; 对随机森林中的树进行加权平均，而非简单平均 -&gt; <strong>Boosting</strong> -&gt; 对Boosting中的树进行正则化 -&gt; XGBoost</p></li></ul><p>对比模型：MART, DART(DART:Dropouts meet Multiple Additive Regression Trees), LightGBM, CatBoost</p>]]></content>
     
