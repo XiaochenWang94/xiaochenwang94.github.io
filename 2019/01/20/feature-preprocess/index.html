@@ -88,12 +88,12 @@
 <meta property="og:site_name" content="Recursion">
 <meta property="og:description" content="Numeric Feature对于线性模型需要Feature scaling，不同的scale会对梯度下降有很大的影响，scale大的feature的微小变动对结果影响很大。  Scaling MinMaxScaler：不改变分布 StandardScaler   Outliers使用可视化的方法，发现outliers。 Feature clipping: 使用99%的分位数作为最大的。 Rank">
 <meta property="og:locale" content="CN">
-<meta property="og:image" content="http://yoursite.com/images/ML/feature_preprocess/8sgd.jpg">
-<meta property="og:updated_time" content="2019-01-20T14:02:38.491Z">
+<meta property="og:image" content="http://yoursite.com/images/ML/feature_preprocess/sgd.jpeg">
+<meta property="og:updated_time" content="2019-01-20T14:10:37.212Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="feature_preprocess">
 <meta name="twitter:description" content="Numeric Feature对于线性模型需要Feature scaling，不同的scale会对梯度下降有很大的影响，scale大的feature的微小变动对结果影响很大。  Scaling MinMaxScaler：不改变分布 StandardScaler   Outliers使用可视化的方法，发现outliers。 Feature clipping: 使用99%的分位数作为最大的。 Rank">
-<meta name="twitter:image" content="http://yoursite.com/images/ML/feature_preprocess/8sgd.jpg">
+<meta name="twitter:image" content="http://yoursite.com/images/ML/feature_preprocess/sgd.jpeg">
 
 
 
@@ -366,7 +366,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  663
+                  735
                 </span>
               
 
@@ -428,7 +428,9 @@
 <p>可以使用mean或者median值填充，也可以使用拟合的方式填充。增加一列标记是否缺失的二值变量。</p>
 <p>不要在产生新的feature之前对缺失值做填充，否则会影响产生的feature。</p>
 <h2 id="标准化"><a href="#标准化" class="headerlink" title="标准化"></a>标准化</h2><p>在机器学习算法的目标函数(例如SVM的RBF内核或线性模型的l1和l2正则化)，许多学习算法中目标函数的基础都是假设所有的特征都是零均值并且具有同一阶数上的方差。如果某个特征的方差比其他特征大几个数量级，那么它就会在学习算法中占据主导位置，导致学习器并不能像我们说期望的那样，从其他特征中学习。</p>
-<p>标准化能够加速梯度下降，如下图：<br><img src="/images/ML/feature_preprocess/8sgd.jpg" alt=""><br>左边蓝色的图片，由于$x_2$的范围比较大，因此$w_2$的微小变化损失函数就有很大的变化。反之$w_1$要变化很多损失函数才有明显变化。从梯度下降的公式来说，$w_1$的变化取决于$x_1$，因此梯度很小，那么需要很久才能下降到最低点。右边的图片做了标准化，能够很快的下降到最低点。</p>
+<p>标准化能够加速梯度下降，如下图：<br><img src="/images/ML/feature_preprocess/sgd.jpeg" alt=""><br>左边蓝色的图片，由于$x_2$的范围比较大，因此$w_2$的微小变化损失函数就有很大的变化。反之$w_1$要变化很多损失函数才有明显变化。从梯度下降的公式来说，$w_1$的变化取决于$x_1$，因此梯度很小，那么需要很久才能下降到最低点。右边的图片做了标准化，能够很快的下降到最低点。</p>
+<h2 id="其他变换"><a href="#其他变换" class="headerlink" title="其他变换"></a>其他变换</h2><p>QuantileTransformer把数据变成对应的分为数，例如原本处于0.25分位数的数字是6.8，变化之后就是0.25。这个变换是一个非线性变换。</p>
+<p>归一化，是 缩放单个样本以具有单位范数的过程。</p>
 
       
     </div>
@@ -612,7 +614,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Numeric-Feature"><span class="nav-number">1.</span> <span class="nav-text">Numeric Feature</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Categorical-and-ordinal-features"><span class="nav-number">2.</span> <span class="nav-text">Categorical and ordinal features</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Datetime-and-coordinates-features"><span class="nav-number">3.</span> <span class="nav-text">Datetime and coordinates features</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#缺失值"><span class="nav-number">4.</span> <span class="nav-text">缺失值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#标准化"><span class="nav-number">5.</span> <span class="nav-text">标准化</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Numeric-Feature"><span class="nav-number">1.</span> <span class="nav-text">Numeric Feature</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Categorical-and-ordinal-features"><span class="nav-number">2.</span> <span class="nav-text">Categorical and ordinal features</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Datetime-and-coordinates-features"><span class="nav-number">3.</span> <span class="nav-text">Datetime and coordinates features</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#缺失值"><span class="nav-number">4.</span> <span class="nav-text">缺失值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#标准化"><span class="nav-number">5.</span> <span class="nav-text">标准化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他变换"><span class="nav-number">6.</span> <span class="nav-text">其他变换</span></a></li></ol></div>
             
 
           </div>
