@@ -81,20 +81,20 @@
 
 
 
-<meta name="description" content="Numeric Feature对于线性模型需要Feature scaling，不同的scale会对梯度下降有很大的影响，scale大的feature的微小变动对结果影响很大。  Scaling MinMaxScaler：不改变分布 StandardScaler   Outliers使用可视化的方法，发现outliers。 Feature clipping: 使用99%的分位数作为最大的。 Rank">
+<meta name="description" content="数据预处理流程 判断数据类型，判断每一列数据的类型，float，category，boolean，text。 删除只有一个值的特征。 删除相同的特征，有些特征虽然值不一样，但只是用了不同的代号而已。 根据特征的类型产生新的特征。例如，对于连续的特征，每个月的销量的累加，对于神经网络，可以自动产生这种特征，但是对于树模型，无法处理这种特征。对于类别的特征，参考下面类别特征。 可以加入近邻数据的特征的">
 <meta name="keywords" content="数据处理">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数据预处理">
 <meta property="og:url" content="http://yoursite.com/2019/01/20/feature-preprocess/index.html">
 <meta property="og:site_name" content="Recursion">
-<meta property="og:description" content="Numeric Feature对于线性模型需要Feature scaling，不同的scale会对梯度下降有很大的影响，scale大的feature的微小变动对结果影响很大。  Scaling MinMaxScaler：不改变分布 StandardScaler   Outliers使用可视化的方法，发现outliers。 Feature clipping: 使用99%的分位数作为最大的。 Rank">
+<meta property="og:description" content="数据预处理流程 判断数据类型，判断每一列数据的类型，float，category，boolean，text。 删除只有一个值的特征。 删除相同的特征，有些特征虽然值不一样，但只是用了不同的代号而已。 根据特征的类型产生新的特征。例如，对于连续的特征，每个月的销量的累加，对于神经网络，可以自动产生这种特征，但是对于树模型，无法处理这种特征。对于类别的特征，参考下面类别特征。 可以加入近邻数据的特征的">
 <meta property="og:locale" content="CN">
 <meta property="og:image" content="http://yoursite.com/images/ML/feature_preprocess/eda_hist.png">
 <meta property="og:image" content="http://yoursite.com/images/ML/feature_preprocess/sgd.jpeg">
-<meta property="og:updated_time" content="2019-01-21T13:50:02.547Z">
+<meta property="og:updated_time" content="2019-01-26T12:17:04.419Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数据预处理">
-<meta name="twitter:description" content="Numeric Feature对于线性模型需要Feature scaling，不同的scale会对梯度下降有很大的影响，scale大的feature的微小变动对结果影响很大。  Scaling MinMaxScaler：不改变分布 StandardScaler   Outliers使用可视化的方法，发现outliers。 Feature clipping: 使用99%的分位数作为最大的。 Rank">
+<meta name="twitter:description" content="数据预处理流程 判断数据类型，判断每一列数据的类型，float，category，boolean，text。 删除只有一个值的特征。 删除相同的特征，有些特征虽然值不一样，但只是用了不同的代号而已。 根据特征的类型产生新的特征。例如，对于连续的特征，每个月的销量的累加，对于神经网络，可以自动产生这种特征，但是对于树模型，无法处理这种特征。对于类别的特征，参考下面类别特征。 可以加入近邻数据的特征的">
 <meta name="twitter:image" content="http://yoursite.com/images/ML/feature_preprocess/eda_hist.png">
 
 
@@ -390,7 +390,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  1.8k
+                  2k
                 </span>
               
 
@@ -427,7 +427,14 @@
       
 
       
-        <h2 id="Numeric-Feature"><a href="#Numeric-Feature" class="headerlink" title="Numeric Feature"></a>Numeric Feature</h2><p>对于线性模型需要Feature scaling，不同的scale会对梯度下降有很大的影响，scale大的feature的微小变动对结果影响很大。</p>
+        <h2 id="数据预处理流程"><a href="#数据预处理流程" class="headerlink" title="数据预处理流程"></a>数据预处理流程</h2><ol>
+<li>判断数据类型，判断每一列数据的类型，float，category，boolean，text。</li>
+<li>删除只有一个值的特征。</li>
+<li>删除相同的特征，有些特征虽然值不一样，但只是用了不同的代号而已。</li>
+<li>根据特征的类型产生新的特征。例如，对于连续的特征，每个月的销量的累加，对于神经网络，可以自动产生这种特征，但是对于树模型，无法处理这种特征。对于类别的特征，参考下面类别特征。</li>
+<li>可以加入近邻数据的特征的平均值作为新的特征，但是定义近邻距离时，首先要确定不同的特征组(可以根据特征的均值分类)，之后给定不同特征组不同的系数，然后求出距离。</li>
+</ol>
+<h2 id="Numeric-Feature"><a href="#Numeric-Feature" class="headerlink" title="Numeric Feature"></a>Numeric Feature</h2><p>对于线性模型需要Feature scaling，不同的scale会对梯度下降有很大的影响，scale大的feature的微小变动对结果影响很大。</p>
 <ul>
 <li>Scaling<ul>
 <li>MinMaxScaler：不改变分布</li>
@@ -591,7 +598,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">13</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -663,7 +670,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Numeric-Feature"><span class="nav-number">1.</span> <span class="nav-text">Numeric Feature</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Categorical-and-ordinal-features"><span class="nav-number">2.</span> <span class="nav-text">Categorical and ordinal features</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Datetime-and-coordinates-features"><span class="nav-number">3.</span> <span class="nav-text">Datetime and coordinates features</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#缺失值"><span class="nav-number">4.</span> <span class="nav-text">缺失值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文本特征"><span class="nav-number">5.</span> <span class="nav-text">文本特征</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据可视化"><span class="nav-number">6.</span> <span class="nav-text">数据可视化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#标准化"><span class="nav-number">7.</span> <span class="nav-text">标准化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他变换"><span class="nav-number">8.</span> <span class="nav-text">其他变换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据清洗"><span class="nav-number">9.</span> <span class="nav-text">数据清洗</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#数据预处理流程"><span class="nav-number">1.</span> <span class="nav-text">数据预处理流程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Numeric-Feature"><span class="nav-number">2.</span> <span class="nav-text">Numeric Feature</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Categorical-and-ordinal-features"><span class="nav-number">3.</span> <span class="nav-text">Categorical and ordinal features</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Datetime-and-coordinates-features"><span class="nav-number">4.</span> <span class="nav-text">Datetime and coordinates features</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#缺失值"><span class="nav-number">5.</span> <span class="nav-text">缺失值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文本特征"><span class="nav-number">6.</span> <span class="nav-text">文本特征</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据可视化"><span class="nav-number">7.</span> <span class="nav-text">数据可视化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#标准化"><span class="nav-number">8.</span> <span class="nav-text">标准化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他变换"><span class="nav-number">9.</span> <span class="nav-text">其他变换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据清洗"><span class="nav-number">10.</span> <span class="nav-text">数据清洗</span></a></li></ol></div>
             
 
           </div>
@@ -708,7 +715,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共4.9k字</span>
+  <span class="post-count">博客全站共7.3k字</span>
 </div>
 
 <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
