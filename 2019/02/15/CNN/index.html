@@ -91,7 +91,8 @@
 <meta property="og:image" content="http://yoursite.com/images/DL/CNN/deep_low.jpg">
 <meta property="og:image" content="http://yoursite.com/images/DL/CNN/three_layer_nn.png">
 <meta property="og:image" content="http://yoursite.com/images/DL/CNN/speed_bp.png">
-<meta property="og:updated_time" content="2019-02-16T02:38:57.061Z">
+<meta property="og:image" content="http://yoursite.com/images/DL/CNN/sigmod.jpg">
+<meta property="og:updated_time" content="2019-02-16T10:45:52.142Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CNN">
 <meta name="twitter:description" content="残差网络从理论上，增加网络的层数，使网络更加复杂能够提取更加复杂的特征。但是通过实验发现，当网络层数增加时，网络准确度出现饱和甚至下降。56层的网络效果比20层的网络差。这是因为深层网络存在梯度消失或者梯度爆炸的问题。使得深度网络难以训练。  残差学习从极端情况考虑，在浅层的网络上加入恒等变换层，可以得到和浅层网络相同的效果。因此可以在这个基础上加入残差，降低学习复杂度。从直观上看残差学习需要学习">
@@ -368,7 +369,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  581
+                  711
                 </span>
               
 
@@ -413,11 +414,13 @@
 <script type="math/tex; mode=display">f_i = \sigma(f_{i-1}*W_i+b_i)</script><p>其中$f_i, W_i, b_i$分别代表第$i$层的输出，系数和偏置项。使用$f_0$表示输入x。$\sigma$代表sigmod函数。</p>
 <p>BP算法基于梯度下降策略，以目标的负梯度方向对参数进行调整。参数更新策略为$w=w+\Delta w$，其中$\Delta w=-\alpha \frac{\partial loss}{\partial w}$</p>
 <p>以$b_2$的反向梯度传播为例，<script type="math/tex">\Delta b_2=\frac{\partial loss}{\partial b_2}=\frac{\partial loss}{\partial f_4}\frac{\partial f_4}{\partial f_3}\frac{\partial f_3}{\partial f_2}\frac{\partial f_2}{\partial b_2}</script></p>
-<p>其中每一层的反向梯度都是对激活函数的求导。</p>
-<p><strong>梯度消失问题</strong><br>如果每一层的激活函数求导的值都小于1，那么经过很多层之后，浅层的梯度就接近于0。此时浅层得不到有效的训练，因此增加了层数未必效果就好。</p>
-<p><strong>梯度爆炸问题</strong><br>如果每一层激活函数求导的值都大于1，那么经过很多层之后，浅层的梯度就是个很大的数字，浅层也同样的不到有效的训练。</p>
-<p>Nielsen在《Neural Networks and Deep Learning》中的实验结果如下图，可以看出越浅的层训练的速度越慢，越深的层训练速度越快。</p>
+<p>其中每一层的反向梯度都是对激活函数的求导之后乘上$W_i$。</p>
+<p><strong>梯度消失问题</strong><br>如果每一层的激活函数求导的值都小于1，那么经过很多层之后，浅层的梯度就接近于0。此时浅层得不到有效的训练，因此增加了层数未必效果就好。一般w初始化在0-1之间，所以总的乘积小于1。</p>
+<p>Nielsen在《Neural Networks and Deep Learning》中的实验结果如下图，可以看出越浅的层训练的速度越慢，越深的层训练速度越快。第一层的速度比第四层慢了100倍。</p>
 <p><img src="/images/DL/CNN/speed_bp.png" alt=""></p>
+<p>第二，不同的激活函数对于梯度消失的影响不同。例如sigmod函数，如下图所示，$\sigma(x)=\frac{1}{1+e^{-x}}$的导数为$\sigma^{\prime}=\sigma*(1-\sigma)$。而sigmod函数的取值范围是(0, 1)，因此sigmod函数导数的取值最大为0.25。当神经网络层数增加之后，梯度消失的很快。</p>
+<p><img src="/images/DL/CNN/sigmod.jpg" alt=""></p>
+<p><strong>梯度爆炸问题</strong><br>如果每一层激活函数求导的值都大于1，那么经过很多层之后，浅层的梯度就是个很大的数字，浅层也同样的不到有效的训练。</p>
 
       
     </div>
@@ -646,7 +649,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共7.3k字</span>
+  <span class="post-count">博客全站共7.4k字</span>
 </div>
 
 <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
