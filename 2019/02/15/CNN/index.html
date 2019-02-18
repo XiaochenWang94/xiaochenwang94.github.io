@@ -90,10 +90,11 @@
 <meta property="og:locale" content="CN">
 <meta property="og:image" content="http://yoursite.com/images/DL/CNN/deep_low.jpg">
 <meta property="og:image" content="http://yoursite.com/images/DL/CNN/three_layer_nn.png">
+<meta property="og:image" content="http://yoursite.com/images/DL/CNN/vanishing_gradient.png">
 <meta property="og:image" content="http://yoursite.com/images/DL/CNN/speed_bp.png">
 <meta property="og:image" content="http://yoursite.com/images/DL/CNN/sigmod.jpg">
 <meta property="og:image" content="http://yoursite.com/images/DL/CNN/tanh.jpg">
-<meta property="og:updated_time" content="2019-02-17T03:47:02.212Z">
+<meta property="og:updated_time" content="2019-02-18T12:06:24.539Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CNN">
 <meta name="twitter:description" content="卷积神经网络卷积层尺寸的计算原理 输入矩阵格式：四个维度，依次为：样本数、图像高度、图像宽度、图像通道数 输出矩阵格式：与输出矩阵的维度顺序和含义相同，但是后三个维度（图像高度、图像宽度、图像通道数）的尺寸发生变化。 权重矩阵（卷积核）格式：同样是四个维度，但维度的含义与上面两者都不同，为：卷积核高度、卷积核宽度、输入通道数、输出通道数（卷积核个数） 关系  卷集核的通道数由输入矩阵决定。 输出矩">
@@ -434,6 +435,8 @@
 <p>以$b_2$的反向梯度传播为例，<script type="math/tex">\Delta b_2=\frac{\partial loss}{\partial b_2}=\frac{\partial loss}{\partial f_4}\frac{\partial f_4}{\partial f_3}\frac{\partial f_3}{\partial f_2}\frac{\partial f_2}{\partial b_2}</script></p>
 <p>其中每一层的反向梯度都是对激活函数的求导之后乘上$W_i$。</p>
 <h3 id="梯度消失问题"><a href="#梯度消失问题" class="headerlink" title="梯度消失问题"></a>梯度消失问题</h3><p>如果每一层的激活函数求导的值都小于1，那么经过很多层之后，浅层的梯度就接近于0。此时浅层得不到有效的训练，因此增加了层数未必效果就好。一般w初始化在0-1之间，所以总的乘积小于1。</p>
+<p>另外从直觉上理解，loss对于w的梯度，代表w有微小改变时，loss的变化量。在经过sigmod函数的时候，尽管w变化很大，sigmod的输出也会变化很小，特别是经过多层sigmod函数之后，变化就更小了。</p>
+<p><img src="/images/DL/CNN/vanishing_gradient.png" alt=""></p>
 <p>Nielsen在《Neural Networks and Deep Learning》中的实验结果如下图，可以看出越浅的层训练的速度越慢，越深的层训练速度越快。第一层的速度比第四层慢了100倍。</p>
 <p><img src="/images/DL/CNN/speed_bp.png" alt=""></p>
 <p>第二，不同的激活函数对于梯度消失的影响不同。例如sigmod函数，如下图所示，$\sigma(x)=\frac{1}{1+e^{-x}}$的导数为$\sigma^{\prime}=\sigma*(1-\sigma)$。而sigmod函数的取值范围是(0, 1)，因此sigmod函数导数的取值最大为0.25。当神经网络层数增加之后，梯度消失的很快。</p>
@@ -490,6 +493,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/02/18/掏粪男孩/" rel="prev" title="掏粪男孩">
+                掏粪男孩 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -568,7 +575,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -685,7 +692,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共8.4k字</span>
+  <span class="post-count">博客全站共8.8k字</span>
 </div>
 
 <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>

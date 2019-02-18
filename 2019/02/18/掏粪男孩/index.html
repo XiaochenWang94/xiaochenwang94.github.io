@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Ensemble Learning,">
+  <meta name="keywords" content="Hexo, NexT">
 
 
 
@@ -81,18 +81,17 @@
 
 
 
-<meta name="description" content="随机森林">
-<meta name="keywords" content="Ensemble Learning">
+<meta name="description" content="这篇博客记录tensorflow一些知识。 tensorflow读取机制在算法识别图片的时候，要先把图片读到内存中，然后再输入GPU进行读取。假设每张图片读取要0.1s，计算要0.9s，那么每一秒中GPU就有0.1s无事可做。为了充分利用GPU，使用两个线程，一个线程先将数据读取到内存队列，另一个线程直接从内存队列中读取数据进行计算。在tensorflow中，在内存队列前又增加了一个文件名队列">
 <meta property="og:type" content="article">
-<meta property="og:title" content="集成学习">
-<meta property="og:url" content="http://yoursite.com/2019/01/05/集成学习/index.html">
+<meta property="og:title" content="掏粪男孩">
+<meta property="og:url" content="http://yoursite.com/2019/02/18/掏粪男孩/index.html">
 <meta property="og:site_name" content="Recursion">
-<meta property="og:description" content="随机森林">
+<meta property="og:description" content="这篇博客记录tensorflow一些知识。 tensorflow读取机制在算法识别图片的时候，要先把图片读到内存中，然后再输入GPU进行读取。假设每张图片读取要0.1s，计算要0.9s，那么每一秒中GPU就有0.1s无事可做。为了充分利用GPU，使用两个线程，一个线程先将数据读取到内存队列，另一个线程直接从内存队列中读取数据进行计算。在tensorflow中，在内存队列前又增加了一个文件名队列">
 <meta property="og:locale" content="CN">
-<meta property="og:updated_time" content="2019-01-05T09:46:53.342Z">
+<meta property="og:updated_time" content="2019-02-18T12:06:47.447Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="集成学习">
-<meta name="twitter:description" content="随机森林">
+<meta name="twitter:title" content="掏粪男孩">
+<meta name="twitter:description" content="这篇博客记录tensorflow一些知识。 tensorflow读取机制在算法识别图片的时候，要先把图片读到内存中，然后再输入GPU进行读取。假设每张图片读取要0.1s，计算要0.9s，那么每一秒中GPU就有0.1s无事可做。为了充分利用GPU，使用两个线程，一个线程先将数据读取到内存队列，另一个线程直接从内存队列中读取数据进行计算。在tensorflow中，在内存队列前又增加了一个文件名队列">
 
 
 
@@ -122,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/01/05/集成学习/">
+  <link rel="canonical" href="http://yoursite.com/2019/02/18/掏粪男孩/">
 
 
 
 
 
-  <title>集成学习 | Recursion</title>
+  <title>掏粪男孩 | Recursion</title>
   
 
 
@@ -299,7 +298,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/05/集成学习/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/18/掏粪男孩/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Xiaochen Wang">
@@ -316,7 +315,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">集成学习</h1>
+          <h1 class="post-title" itemprop="name headline">掏粪男孩</h1>
         
 
         <div class="post-meta">
@@ -328,8 +327,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-05T13:19:25+08:00">
-                2019-01-05
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-02-18T16:28:10+08:00">
+                2019-02-18
               </time>
             
 
@@ -338,28 +337,6 @@
             
           </span>
 
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/ML/" itemprop="url" rel="index">
-                    <span itemprop="name">ML</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -387,7 +364,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  4
+                  385
                 </span>
               
 
@@ -424,7 +401,11 @@
       
 
       
-        <h2 id="随机森林"><a href="#随机森林" class="headerlink" title="随机森林"></a>随机森林</h2>
+        <p>这篇博客记录tensorflow一些知识。</p>
+<h2 id="tensorflow读取机制"><a href="#tensorflow读取机制" class="headerlink" title="tensorflow读取机制"></a>tensorflow读取机制</h2><p>在算法识别图片的时候，要先把图片读到内存中，然后再输入GPU进行读取。假设每张图片读取要0.1s，计算要0.9s，那么每一秒中GPU就有0.1s无事可做。为了充分利用GPU，使用两个线程，一个线程先将数据读取到内存队列，另一个线程直接从内存队列中读取数据进行计算。在tensorflow中，在内存队列前又增加了一个文件名队列。</p>
+<p>为什么要增加文件名队列呢？平时实验中一个epoch就是把数据从头到尾的跑一边，实验一般有多个epoch，有几个epoch就把文件名在文件队列中复制几遍即可，这样就方便了内存队列，不用因为多个epoch而做出改变。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 导入tensorflow</span></span><br><span class="line"><span class="keyword">import</span> tensorflow <span class="keyword">as</span> tf </span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个Session</span></span><br><span class="line"><span class="keyword">with</span> tf.Session() <span class="keyword">as</span> sess:</span><br><span class="line">    <span class="comment"># 我们要读三幅图片A.jpg, B.jpg, C.jpg</span></span><br><span class="line">    filename = [<span class="string">'A.jpg'</span>, <span class="string">'B.jpg'</span>, <span class="string">'C.jpg'</span>]</span><br><span class="line">    <span class="comment"># string_input_producer会产生一个文件名队列</span></span><br><span class="line">    filename_queue = tf.train.string_input_producer(filename, shuffle=<span class="keyword">False</span>, num_epochs=<span class="number">5</span>)</span><br><span class="line">    <span class="comment"># reader从文件名队列中读数据。对应的方法是reader.read</span></span><br><span class="line">    reader = tf.WholeFileReader()</span><br><span class="line">    key, value = reader.read(filename_queue)</span><br><span class="line">    <span class="comment"># tf.train.string_input_producer定义了一个epoch变量，要对它进行初始化</span></span><br><span class="line">    tf.local_variables_initializer().run()</span><br><span class="line">    <span class="comment"># 使用start_queue_runners之后，才会开始填充队列</span></span><br><span class="line">    threads = tf.train.start_queue_runners(sess=sess)</span><br><span class="line">    i = <span class="number">0</span></span><br><span class="line">    <span class="keyword">while</span> <span class="keyword">True</span>:</span><br><span class="line">        i += <span class="number">1</span></span><br><span class="line">        <span class="comment"># 获取图片数据并保存</span></span><br><span class="line">        image_data = sess.run(value)</span><br><span class="line">        <span class="keyword">with</span> open(<span class="string">'read/test_%d.jpg'</span> % i, <span class="string">'wb'</span>) <span class="keyword">as</span> f:</span><br><span class="line">            f.write(image_data)</span><br></pre></td></tr></table></figure>
+
       
     </div>
     
@@ -439,12 +420,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/Ensemble-Learning/" rel="tag"># Ensemble Learning</a>
-          
-        </div>
-      
 
       
       
@@ -454,8 +429,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/01/05/决策树/" rel="next" title="决策树">
-                <i class="fa fa-chevron-left"></i> 决策树
+              <a href="/2019/02/15/CNN/" rel="next" title="CNN">
+                <i class="fa fa-chevron-left"></i> CNN
               </a>
             
           </div>
@@ -463,10 +438,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/01/14/GANs/" rel="prev" title="GANs">
-                GANs <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -617,7 +588,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#随机森林"><span class="nav-number">1.</span> <span class="nav-text">随机森林</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#tensorflow读取机制"><span class="nav-number">1.</span> <span class="nav-text">tensorflow读取机制</span></a></li></ol></div>
             
 
           </div>
